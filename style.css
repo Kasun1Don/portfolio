@@ -9,3 +9,49 @@ html {
     font-weight: 300;
     font-style: normal;
 }
+
+header {
+    background: #000000;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header > nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #313442;
+    color: #F5F5F5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+a:hover {
+    color: #FF8833;
+}
+
+header > .content > h1 {
+    color: #FF8833;
+    text-align: center;
+}
+
+header > .content > p {
+    color: #FF8833;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-rows: repeat(3, 100vh);
+}
