@@ -8,6 +8,7 @@ html {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -44,6 +45,7 @@ a:hover {
 header > .content > h1 {
     color: #FF8833;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 header > .content > p {
@@ -51,7 +53,85 @@ header > .content > p {
     text-align: center;
 }
 
-main {
+main > .about {
+    height: 100vh;
+    background: #1c1e26;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+main > .about > .figures {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+}
+
+main > .about > .figures > figure {
+    margin: 0 1rem;
+
+}
+
+main > .about > h1 {
+    color: #FF8833;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main > .about > p {
+    color: #FF8833;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+main > .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+}
+
+main > .skills > h1 , h3{
+    color: #FF8833;
+    text-align: center;
+}
+
+main > .skills > .overview {
     display: grid;
-    grid-template-rows: repeat(3, 100vh);
+    grid-template-columns: repeat(3, minmax(33vw, 1fr));
+    grid-template-areas: "development growth team";
+}
+
+main > .skills > .overview > .development {
+    grid-area: development;
+}
+main > .skills > .overview > .growth {
+    grid-area: growth;
+}
+main > .skills > .overview > .team {
+    grid-area: team;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:650px) {
+    main > .skills > .overview {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+     "development"
+     "growth"
+     "team";
+    }
 }
