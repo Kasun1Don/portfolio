@@ -218,9 +218,13 @@ main > .skills > .tools {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:    "react flask "
                             "postrgress nodejs" 
-                            "express rubyrails";
+                            "git rubyrails";
     gap: 1rem;
     text-align: center;
+}
+
+main > .skills > .tools .rubyrails {
+    border-radius: 15%;
 }
 
 /* projects nav bar anchor links to each project description */
@@ -656,7 +660,7 @@ footer > p {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:    "react flask postrgress"
-                                "nodejs express rubyrails";
+                                "nodejs git rubyrails";
         gap: 1rem;
         text-align: center;
     }
