@@ -147,6 +147,8 @@ main > .about > .figures > figure {
 
 }
 
+/* skills , languages and tools below */
+
 main > .skills {
     display: flex;
     flex-direction: column;
@@ -157,15 +159,21 @@ main > .skills {
     padding-bottom: 2rem;
 }
 
-main > .skills > h1 , h2, h3 ,p {  /* the commas cause these styles to apply to h2, h3, p globally*/
+main > .skills > h1 , h2 ,p {  /* the commas cause these styles to apply to h2, h3, p globally*/
     color: #FF8833;
     text-align: center;
     margin-bottom: 2rem;
 }
 
 main > .skills > h1 {
-    padding: 0 1rem;
+    padding-top: 2rem;
     color:#FF8833;
+}
+
+main > .skills h3 {
+    color:#FF8833;
+    text-align: center;
+    padding: 1rem;
 }
 
 main > .skills > .overview {
@@ -225,15 +233,16 @@ main > .projects {
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    padding-bottom: 2rem;
 }
 
 main > .projects > h1 {
     color: #FF8833;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
-/* this is the navigation for projects with image previews */
+/* image previews for the projects */
 
 main > .projects > nav {
     display: grid;
@@ -252,11 +261,23 @@ main .projects .preview {
     align-items: center;
     text-align: center;
 }
+main .projects .preview img {
+    min-width: 11rem;
+    min-height: 16rem;
+    width: 70%;
+    max-height: 19rem;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+main .projects .preview img:hover {
+    filter: brightness(90%);
+}
 
 main .projects .textover {
     display: block;
     margin-top: 1rem;
-    max-width: 170px;
+    max-width: 11rem;
     height: 1rem;
     text-decoration: none;
     color: #F5F5F5;
@@ -298,16 +319,17 @@ main > .showcase > .text > p {
 }
 
 main > #project1 {
-    background: green;
+    background: #186118;
+    /* background: #258627; */
 }
 
 main > #project2 {
-    background: red;
+    background: #9b0700;
 }
 
 
 main > #project3 {
-    background: blue;
+    background: #0136a9;
 }
 
 main > #project4 {
@@ -368,7 +390,7 @@ main > .contact > img {
     min-width: 20rem;
     width: 40%;
     max-width: 28rem;
-    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 main > .contact > h1 {
@@ -377,15 +399,28 @@ main > .contact > h1 {
     margin-top: 2rem;
 }
 
+main > .contact > h3 {
+    color:#FF8833;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 main > .contact button {
     margin-bottom: 1rem;
-    padding: 1rem 8rem;
+    padding: 1rem 6rem;
     font-size: large;
+    border:1px solid #FF6A00;
+    background: none;
+    color: #FF6A00;
 }
 
 main > .contact button:hover {
     background-color: #FF8833;
     color: #1c1e26;
+}
+
+main > .contact .resume {
+    margin-top: 1rem;
 }
 
 main > .contact .github {
@@ -446,7 +481,6 @@ footer > p {
     color: #FF8833;
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    /* text-decoration: underline; */
 }
 
 .blogindex > section > aside p {
@@ -587,7 +621,7 @@ footer > p {
                             /* ------media queries------- */
 
                             /* for tablet size and above */
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 755px) {
     
     .one {
         height: 500px;
@@ -641,6 +675,10 @@ footer > p {
         grid-template-rows: 1fr;
         grid-template-areas: "project1 project2 project3 project4";
 
+    }
+
+    main .projects .preview img {
+        min-height: 19rem;
     }
 
     main > .showcase {
