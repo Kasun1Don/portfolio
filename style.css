@@ -599,15 +599,18 @@ footer > p {
 .blogbody > figure > img {
     width: 100%;
     max-width: 46rem;
+    padding-bottom: 2rem;
 }
 
 .blogbody > figure h2 {
     color: #F5F5F5;
+    max-width: 46rem;
 }
 
 .blogbody > article > h1 {
     color: #FF8833;
     text-align: center;
+    font-size: 2rem;
 }
 
 .blogbody > article > p {
