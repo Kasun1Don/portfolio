@@ -126,26 +126,37 @@ main > .about > .about-text {
 main > .about > .about-text > h1 {
     color: #FF8833;
     text-align: center;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-main > .about-text > p {
+main > .about > .about-text > p {
     color: #FF8833;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 main > .about > .figures {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100vw;
 }
 
-main > .about > .figures > figure {
+main > .about > .figures img {
+    width: 80px;
+    height: 80px;
     margin: 0 1rem;
-
+    margin-bottom: 1rem;
 }
+
+main > .about > .figures #aska {
+    width: auto;
+    height: 80px;
+}
+
+
 
 /* skills , languages and tools below */
 
@@ -167,7 +178,6 @@ main > .skills > h1 , h2 ,p {  /* the commas cause these styles to apply to h2, 
 
 main > .skills > h1 {
     padding-top: 2rem;
-    color:#FF8833;
 }
 
 main > .skills h3 {
