@@ -425,7 +425,7 @@ footer > p {
 
 .blogindex > section > aside > h1 {
     color: #FF8833;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
     text-decoration: underline;
 }
@@ -441,7 +441,7 @@ footer > p {
 
 .blogindex > section > aside li {
     list-style-type: none;
-    font-size: 1.5em; 
+    font-size: 1.2em; 
     padding: 1rem 0;
 }
 
@@ -449,6 +449,7 @@ footer > p {
     grid-area: main;
     display: none;
     background: white;
+    padding-right: 1rem;
 }
 
 /* articles here are the previews of the blogs */
@@ -456,7 +457,7 @@ footer > p {
 .blogindex > section > .cards > article {
     background: #F5F5F5;
     height: auto;
-    width: 30%;
+    width: 100%;
     border-radius: 8%;
     padding-top: 2rem;
     margin: 1rem 0;
@@ -565,6 +566,7 @@ footer > p {
 
                             /* ------media queries------- */
 
+                            /* for tablet size and above */
 @media only screen and (min-width: 750px) {
     
     .one {
@@ -663,19 +665,22 @@ footer > p {
     }
     
     .blogindex > section > .cards {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-gap: 1rem;
+        /* display: flex;
         flex: 1;
         flex-direction: row;
         justify-content: space-around;
         align-content: space-around;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;  */
     }
 
     .blogindex > section > aside p {
         display: none;
     }
 }
-
+                             /* for desktop size and above */
 @media only screen and (min-width: 950px) {
     main > .interests > .gallery {
         grid-template-columns: repeat(4, 1fr);
