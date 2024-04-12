@@ -58,8 +58,12 @@ header > .content > p {
     text-align: center;
 }
 
+/* header linkedin and github image links */
 header > .headersocials img {
-    padding: 1rem;
+    margin: 1rem;
+    width: 3rem;
+    height: auto;
+    border-radius: 8%;
 }
 
 header > .headersocials a {
@@ -142,8 +146,6 @@ main > .about > .figures > figure {
     margin: 0 1rem;
 
 }
-
-
 
 main > .skills {
     display: flex;
@@ -243,7 +245,7 @@ main > .projects > nav {
     row-gap: 2rem;
 }
 
-main .preview {
+main .projects .preview {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -251,7 +253,7 @@ main .preview {
     text-align: center;
 }
 
-main .textover {
+main .projects .textover {
     display: block;
     margin-top: 1rem;
     max-width: 170px;
@@ -338,11 +340,16 @@ main > .interests > .gallery > figure  > img {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: contain;
 }
 
-main > .interests > h1, figcaption {
+main > .interests > h1 {
     color: #FF8833;
+    margin-top: 2rem;
+}
+main > .interests figcaption {
     margin-top: 1rem;
+    color: #FF8833;
 }
 
 /* contacts component */
@@ -367,10 +374,22 @@ main > .contact > img {
 main > .contact > h1 {
     color:#FF8833;
     margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
-main > .contact > button {
+main > .contact button {
     margin-bottom: 1rem;
+    padding: 1rem 8rem;
+    font-size: large;
+}
+
+main > .contact button:hover {
+    background-color: #FF8833;
+    color: #1c1e26;
+}
+
+main > .contact .github {
+    margin-bottom: 2rem;
 }
 
 /* footer component */
@@ -427,7 +446,7 @@ footer > p {
     color: #FF8833;
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .blogindex > section > aside p {
@@ -457,6 +476,7 @@ footer > p {
 .blogindex > section > .cards > article {
     background: #F5F5F5;
     height: auto;
+    max-height: 22rem;
     width: 100%;
     border-radius: 8%;
     padding-top: 2rem;
@@ -609,8 +629,13 @@ footer > p {
 
     main > .projects {
         justify-content: flex-start;
-        height: 50vh;
+        height: 60vh;
     }
+
+    main > .projects h1 {
+        margin-top: 2rem;
+    }
+
     main > .projects > nav {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
@@ -654,6 +679,10 @@ footer > p {
         max-width: none;
     } 
 
+    main > .interests > .gallery > figure  > img {
+        height: 16rem;
+    }
+
     .blogindex > .blogs {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -668,12 +697,6 @@ footer > p {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
         grid-gap: 1rem;
-        /* display: flex;
-        flex: 1;
-        flex-direction: row;
-        justify-content: space-around;
-        align-content: space-around;
-        flex-wrap: wrap;  */
     }
 
     .blogindex > section > aside p {
@@ -681,7 +704,16 @@ footer > p {
     }
 }
                              /* for desktop size and above */
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1000px) {
+    
+    header > nav {
+        width: 100vw;
+    }
+    
+    main > .interests > .gallery > figure  > img {
+        height: 19rem;
+    }
+
     main > .interests > .gallery {
         grid-template-columns: repeat(4, 1fr);
         width: auto;
