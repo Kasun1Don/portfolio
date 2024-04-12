@@ -341,6 +341,44 @@ footer > p {
 
 /* CSS for Blog Navigation Page */
 
+.blogs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "aside";
+}
+
+
+.blogbody > section > aside {
+    grid-area: aside;
+}
+
+.blogbody > section > .cards {
+    grid-area: main;
+}
+
+
+.blogbody > header {
+    background: #000000;
+    width: auto;
+    display: block;
+    height: 30vh;
+}
+
+.blogbody > header > h1 {
+    color: #FF8833;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.blogbody aside {
+    background: #1c1e26;
+}
+
+.blogbody .cards {
+    display: none;
+}
+
 
 
                             /* ------media queries------- */
@@ -421,8 +459,24 @@ footer > p {
         padding: 1rem;
         min-width: none;
         max-width: none;
-    }
+    } 
 
+    .blogbody > .blogs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "aside main main"
+                             "aside main main";
+        min-height: 70vh;
+        column-gap: 1rem;
+    }
+    
+    .blogbody .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap; 
+    }
 }
 
 @media only screen and (min-width: 950px) {
