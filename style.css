@@ -11,6 +11,11 @@ html {
     scroll-behavior: smooth;
 }
 
+p {
+    line-height: 1.6;
+    font-size: larger;
+}
+
 header {
     background: #000000;
     width: 100vw;
