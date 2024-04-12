@@ -106,7 +106,7 @@ main > .skills {
     padding-bottom: 2rem;
 }
 
-main > .skills > h1 , h2, h3, p{
+main > .skills > h1 , h2, h3 ,p {
     color: #FF8833;
     text-align: center;
     margin-bottom: 2rem;
@@ -221,19 +221,28 @@ main .showcase {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center; 
+    flex-wrap: wrap;
+    padding: 0 1rem;
 }
 
 main > .showcase > img {
     width: 100%;
-    max-width: 40vw;
+    max-width: 26rem;
     height: auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 main > .showcase > .text {
-    max-width: 15rem;
+    max-width: 90%;
+    padding: 1rem;
+    color: #FF8833;
     text-align: center;
+}
+
+main > .showcase > .text > p {
+    margin-top: 1rem;
 }
 
 main > #project1 {
@@ -253,7 +262,40 @@ main > #project4 {
     background: purple;
 }
 
-/* ------media queries------- */
+/* interests component */
+
+main > .interests {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background: #000000;
+}
+main > .interests > .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    padding: 1rem;
+    min-width: 20rem;
+    width: 80%;
+    max-width: 28rem;
+}
+
+main > .interests > .gallery > figure  > img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main > .interests > h1, figcaption {
+    color: #FF8833;
+    margin-top: 1rem;
+}
+
+                            /* ------media queries------- */
 
 @media only screen and (min-width: 750px) {
     main > .about {
@@ -303,11 +345,37 @@ main > #project4 {
         text-align: left;
     }
 
-    main > .showcase > text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5rem;
+    main > .showcase > img {
+        max-width: 40%;
+    }
+
+    main > .showcase > .text {
+        max-width: 40%;
+        padding-left: 2rem;
+        padding-right: 0;
+    }
+    
+    main > .showcase > .text > h1, p {
+        margin-top: 10%;
+        text-align: left;
+    }
+
+    main > .interests > .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+        padding: 1rem;
+        min-width: none;
+        max-width: none;
+    }
+
+}
+
+@media only screen and (min-width: 950px) {
+    main > .interests > .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        width: auto;
+    }
 
 }
