@@ -50,11 +50,58 @@ header > .content > h1 {
     color: #FF8833;
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 header > .content > p {
     color: #FF8833;
     text-align: center;
+}
+
+header > .headersocials img {
+    padding: 1rem;
+}
+
+header > .headersocials a {
+    text-decoration: none;
+}
+
+/* spinning sunset */
+/* This circle below was implemented by adapting from the Ed challenge with the rainbow circle */
+
+@keyframes glowing {
+    0% {
+        background-color: rgb(255, 81, 0);
+    }
+    25% {
+        background-color: rgb(255, 204, 0);
+    }
+    100% {
+        background-color: #FF8833;
+    }
+}
+
+div {
+    position: relative;  /* relative to the viewport */
+    border-radius: 50%; /* creates a perfect circle, curve should extend to 
+                        half the element's width and half the element's height*/
+}
+
+header > .circle {
+    align-self: flex-start;
+    height: 10vh;
+}
+
+ 
+.one {
+    height: 300px;
+    width: 300px;
+    background-color: #FF8833;
+    border: 50px solid #FF6A00;
+    z-index: 1;
+    top: -420px;
+    left: -100px;
+    animation: glowing 1.5s ease-in-out infinite alternate;
 }
 
 main > .about {
@@ -376,12 +423,25 @@ footer > p {
     text-decoration: none;
 }
 
+.blogindex > section > aside > h1 {
+    color: #FF8833;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.blogindex > section > aside p {
+    color: #F5F5F5;
+    margin: 1rem;
+}
+
 .blogindex > section > aside a:hover {
     color: #FF6A00;
 }
 
 .blogindex > section > aside li {
     list-style-type: none;
+    font-size: 1.5em; 
     padding: 1rem 0;
 }
 
@@ -391,7 +451,7 @@ footer > p {
     background: white;
 }
 
-/* articles are the previews of the blogs */
+/* articles here are the previews of the blogs */
 
 .blogindex > section > .cards > article {
     background: #F5F5F5;
@@ -402,7 +462,7 @@ footer > p {
     margin: 1rem 0;
 }
 
-.blogindex > section > .cards > article > img {
+.blogindex > section > .cards > article img {
     width: 100%;
     height: auto;
     display: block;
@@ -410,9 +470,20 @@ footer > p {
 
 .blogindex > section > .cards > article > h3 {
     width: 100%;
-    padding-top: 1rem;
+    padding: 1rem 1rem;
+    margin-bottom: 0;
     height: auto;
     display: block;
+}
+
+.blogindex > section > .cards > article a {
+    color: #FF8833;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.blogindex > section > .cards > article a:hover {
+    color: #FF6A00;
 }
 
 
@@ -495,6 +566,15 @@ footer > p {
                             /* ------media queries------- */
 
 @media only screen and (min-width: 750px) {
+    
+    .one {
+        height: 500px;
+        width: 500px;
+        z-index: 1;
+        top: -500px;
+        left: -150px;
+    }
+
     main > .about {
         padding: 2rem;
     }
@@ -589,6 +669,10 @@ footer > p {
         justify-content: space-around;
         align-content: space-around;
         flex-wrap: wrap; 
+    }
+
+    .blogindex > section > aside p {
+        display: none;
     }
 }
 
