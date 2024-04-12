@@ -106,7 +106,7 @@ main > .skills {
     padding-bottom: 2rem;
 }
 
-main > .skills > h1 , h2, h3 ,p {
+main > .skills > #h1 , h2, h3 ,p {
     color: #FF8833;
     text-align: center;
     margin-bottom: 2rem;
@@ -293,6 +293,31 @@ main > .interests > .gallery > figure  > img {
 main > .interests > h1, figcaption {
     color: #FF8833;
     margin-top: 1rem;
+}
+
+main > .contact  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1c1e26;
+    padding: 1rem;
+}
+
+main > .contact > img {
+    border-radius: 50%;
+    min-width: 20rem;
+    width: 40%;
+    max-width: 28rem;
+}
+
+main > .contact > h1 {
+    color:#FF8833;
+    margin-bottom: 1rem;
+}
+
+main > .contact > button {
+    margin-bottom: 1rem;
 }
 
                             /* ------media queries------- */
