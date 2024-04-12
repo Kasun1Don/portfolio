@@ -339,7 +339,7 @@ footer > p {
     font-weight: 600;
 }
 
-/* CSS for Blog Navigation Page */
+/* CSS for Blogs Navigation Page */
 
 .blogindex > header {
     background: #000000;
@@ -391,6 +391,8 @@ footer > p {
     background: white;
 }
 
+/* articles are the previews of the blogs */
+
 .blogindex > section > .cards > article {
     background: #F5F5F5;
     height: auto;
@@ -405,6 +407,14 @@ footer > p {
     height: auto;
     display: block;
 }
+
+.blogindex > section > .cards > article > h3 {
+    width: 100%;
+    padding-top: 1rem;
+    height: auto;
+    display: block;
+}
+
 
 
 /* CSS for Individual Blogs */
@@ -467,7 +477,17 @@ footer > p {
     max-width: 46rem;
 }
 
-.blogbody > header
+.blogbody > header > button {
+    padding: 1% 2%;
+    border-radius: 10%;
+    background: #F5F5F5;
+    cursor: pointer;
+}
+
+.blogbody > header > button:hover {
+    background: #FF6A00;
+    color: #F5F5F5;
+}
 
 
 
