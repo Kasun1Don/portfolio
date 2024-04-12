@@ -25,12 +25,14 @@ header > nav {
     width: 100%;
     position: fixed;
     top: 0;
-    background: #313442;
+    background: #2a2e3f;
     color: #F5F5F5;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     z-index: 1000;
+    height: 2rem;
 }
 
 /* nav bar hover UX */
@@ -106,14 +108,15 @@ main > .skills {
     padding-bottom: 2rem;
 }
 
-main > .skills > #h1 , h2, h3 ,p {
+main > .skills > h1 , h2, h3 ,p {
     color: #FF8833;
     text-align: center;
     margin-bottom: 2rem;
 }
 
 main > .skills > h1 {
-    margin-top: 2rem;
+    padding: 0 1rem;
+    color:#FF8833;
 }
 
 main > .skills > .overview {
@@ -295,6 +298,8 @@ main > .interests > h1, figcaption {
     margin-top: 1rem;
 }
 
+/* contacts component */
+
 main > .contact  {
     display: flex;
     flex-direction: column;
@@ -309,6 +314,7 @@ main > .contact > img {
     min-width: 20rem;
     width: 40%;
     max-width: 28rem;
+    padding-bottom: 1rem;
 }
 
 main > .contact > h1 {
@@ -319,6 +325,23 @@ main > .contact > h1 {
 main > .contact > button {
     margin-bottom: 1rem;
 }
+
+/* footer component */
+
+footer {
+    background: #FF6A00;
+    text-align: center;
+}
+
+footer > p {
+    margin-bottom: 0;
+    color: #000000;
+    font-weight: 600;
+}
+
+/* CSS for Blog Navigation Page */
+
+
 
                             /* ------media queries------- */
 
@@ -380,7 +403,12 @@ main > .contact > button {
         padding-right: 0;
     }
     
-    main > .showcase > .text > h1, p {
+    main > .showcase > .text > h1 {
+        margin-top: 10%;
+        text-align: left;
+    }
+
+    main > .showcase > .text > p {
         margin-top: 10%;
         text-align: left;
     }
