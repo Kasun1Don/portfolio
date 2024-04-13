@@ -90,19 +90,14 @@ header > .headersocials a {
     }
 }
 
-div {
-    position: relative;  /* relative to the viewport */
-    border-radius: 50%; /* creates a perfect circle, curve should extend to 
-                        half the element's width and half the element's height*/
-}
-
 header > .circle {
     align-self: flex-start;
     height: 10vh;
 }
 
- 
 .one {
+    position: relative;  /* relative to the viewport */
+    border-radius: 50%; /* creates a perfect circle, curve should extend to half the element's width and half the element's height*/
     height: 300px;
     width: 300px;
     background-color: #FF8833;
@@ -231,7 +226,7 @@ main > .skills > .languages {
 main > .skills > .tools {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:    "react flask "
+    grid-template-areas:    "react docker "
                             "postrgress nodejs" 
                             "git rubyrails";
     gap: 1rem;
@@ -284,9 +279,10 @@ main .projects .preview img {
     min-width: 11rem;
     min-height: 16rem;
     width: 70%;
-    max-height: 19rem;
+    max-height: 16rem;
     object-fit: cover;
     filter: brightness(70%);
+    display: block;
 }
 
 main .projects .preview img:hover {
@@ -428,7 +424,7 @@ main > .contact button {
     margin-bottom: 1rem;
     padding: 1rem 6rem;
     font-size: large;
-    border:1px solid #FF6A00;
+    border: 2px solid #FF6A00;
     background: none;
     color: #FF6A00;
 }
@@ -476,14 +472,14 @@ footer > p {
     text-align: center;
 }
 
-.blogs {
+.blogindex.blogs {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "aside";
 }
 
-.blogindex > section > aside {
+.blogindex > .blogs > aside {
     grid-area: aside;
     background: #1c1e26;
     min-height: 80vh;
@@ -491,33 +487,33 @@ footer > p {
     text-align: center;
 }
 
-.blogindex > section > aside a {
+.blogindex > .blogs > aside a {
     color: #FF8833;
     text-decoration: none;
 }
 
-.blogindex > section > aside > h1 {
+.blogindex > .blogs > aside > h1 {
     color: #FF8833;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
-.blogindex > section > aside p {
+.blogindex > .blogs > aside p {
     color: #F5F5F5;
     margin: 1rem;
 }
 
-.blogindex > section > aside a:hover {
+.blogindex > .blogs > aside a:hover {
     color: #FF6A00;
 }
 
-.blogindex > section > aside li {
+.blogindex > .blogs > aside li {
     list-style-type: none;
-    font-size: 1.2em; 
+    font-size: 1.4em; 
     padding: 1rem 0;
 }
 
-.blogindex > section > .cards {
+.blogindex > .blogs > .cards {
     grid-area: main;
     display: none;
     background: white;
@@ -526,7 +522,7 @@ footer > p {
 
 /* articles here are the previews of the blogs */
 
-.blogindex > section > .cards > article {
+.blogindex > .blogs > .cards > article {
     background: #F5F5F5;
     height: auto;
     max-height: 22rem;
@@ -536,13 +532,14 @@ footer > p {
     margin: 1rem 0;
 }
 
-.blogindex > section > .cards > article img {
-    width: 100%;
-    height: auto;
+.blogindex > .blogs > .cards > article img {
+    max-width: 100%;
+    min-height: 50%;
+    object-fit: cover;
     display: block;
 }
 
-.blogindex > section > .cards > article > h3 {
+.blogindex > .blogs > .cards > article > h3 {
     width: 100%;
     padding: 1rem 1rem;
     margin-bottom: 0;
@@ -550,19 +547,19 @@ footer > p {
     display: block;
 }
 
-.blogindex > section > .cards > article a {
+.blogindex > .blogs > .cards > article a {
     color: #FF8833;
     text-decoration: none;
     font-size: 1.1em;
 }
 
-.blogindex > section > .cards > article a:hover {
+.blogindex > .blogs > .cards > article a:hover {
     color: #FF6A00;
 }
 
 
 
-/* CSS for Individual Blogs */
+/* The CSS for Individual Blogs */
 
 .blogbody {
     display: flex;
@@ -677,7 +674,7 @@ footer > p {
     main > .skills > .tools {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:    "react flask postrgress"
+        grid-template-areas:    "react docker postrgress"
                                 "nodejs git rubyrails";
         gap: 1rem;
         text-align: center;
@@ -753,13 +750,13 @@ footer > p {
         column-gap: 1rem;
     }
     
-    .blogindex > section > .cards {
+    .blogindex > .blogs > .cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
         grid-gap: 1rem;
     }
 
-    .blogindex > section > aside p {
+    .blogindex > .blogs > aside p {
         display: none;
     }
 }
