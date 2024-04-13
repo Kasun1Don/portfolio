@@ -26,6 +26,7 @@ header {
     height: 100vh;
 }
 
+/* The main floating navigation bar */
 header > nav {
     width: 100%;
     position: fixed;
@@ -40,7 +41,7 @@ header > nav {
     height: 2rem;
 }
 
-/* nav bar hover UX */
+/* nav bar hover highlight */
 
 header > nav > a {
     text-decoration: none;
@@ -51,31 +52,7 @@ a:hover {
     color: #FF8833;
 }
 
-header > .content > h1 {
-    color: #FF8833;
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-
-header > .content > p {
-    color: #FF8833;
-    text-align: center;
-}
-
-/* header linkedin and github image links */
-header > .headersocials img {
-    margin: 1rem;
-    width: 3rem;
-    height: auto;
-    border-radius: 8%;
-}
-
-header > .headersocials a {
-    text-decoration: none;
-}
-
-/* spinning sunset */
+/* Neon sun animation */
 /* This circle below was implemented by adapting from the Ed challenge with the rainbow circle */
 
 @keyframes glowing {
@@ -108,6 +85,32 @@ header > .circle {
     animation: glowing 1.5s ease-in-out infinite alternate;
 }
 
+/* Header text and quick professional image links */
+header > .content > h1 {
+    color: #FF8833;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+header > .content > p {
+    color: #FF8833;
+    text-align: center;
+}
+
+    /* header linkedin and github image links */
+header > .headersocials img {
+    margin: 1rem;
+    width: 3rem;
+    height: auto;
+    border-radius: 8%;
+}
+
+header > .headersocials a {
+    text-decoration: none;
+}
+
+    /* About text with previous company logos and university */
 main > .about {
     height: 100vh;
     background: #1c1e26;
@@ -156,9 +159,7 @@ main > .about > .figures #aska {
     height: 5rem;
 }
 
-
-
-/* skills , languages and tools below */
+/* Skills section */
 
 main > .skills {
     display: flex;
@@ -170,7 +171,7 @@ main > .skills {
     padding-bottom: 2rem;
 }
 
-main > .skills > h1 , h2 ,p {  /* the commas cause these styles to apply to h2, h3, p globally*/
+main > .skills > h1 , h2 ,p {  /* !the commas caused these styles to apply to h2, p globally*/
     color: #FF8833;
     text-align: center;
     margin-bottom: 2rem;
@@ -186,6 +187,7 @@ main > .skills h3 {
     padding: 1rem;
 }
 
+    /* overview of 3 main skills */
 main > .skills > .overview {
     display: grid;
     grid-template-columns: 1fr;
@@ -210,6 +212,7 @@ main > .skills > .overview > .team {
     padding: 1rem;
 }
 
+    /* development languages component */
 main > .skills > .languages {
     display: grid;
     grid-template-columns: 1fr;
@@ -221,8 +224,7 @@ main > .skills > .languages {
     margin-bottom: 2rem;
 }
 
-
-
+    /* development tools component */
 main > .skills > .tools {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -237,8 +239,7 @@ main > .skills > .tools .rubyrails {
     border-radius: 15%;
 }
 
-/* projects nav bar anchor links to each project description */
-
+/* Projects previews and navigation to individual project articles */
 main > .projects {
     background: #1c1e26;
     height: 100vh;
@@ -256,8 +257,7 @@ main > .projects > h1 {
     margin-bottom: 2rem;
 }
 
-/* image previews for the projects */
-
+    /* image previews for projects */
 main > .projects > nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -267,7 +267,6 @@ main > .projects > nav {
     gap: 1rem;
     row-gap: 2rem;
 }
-
 main .projects .preview {
     display: flex;
     flex-direction: column;
@@ -289,6 +288,7 @@ main .projects .preview img:hover {
     filter: brightness(90%);
 }
 
+    /* preview text achor links to projects */
 main .projects .textover {
     display: block;
     margin-top: 1rem;
@@ -302,8 +302,7 @@ main .textover:hover {
     color: #FF8833;
 }
 
-/* more detail about individual projects */
-
+/* Individual project showcase articles */
 main .showcase {
     display: flex;
     flex-direction: column;
@@ -333,9 +332,9 @@ main > .showcase > .text > p {
     margin-top: 1rem;
 }
 
+    /* Projects Background Colors */
 main > #project1 {
     background: #186118;
-    /* background: #258627; */
 }
 
 main > #project2 {
@@ -351,7 +350,7 @@ main > #project4 {
     background: purple;
 }
 
-/* interests component */
+/* Interests and personality component */
 
 main > .interests {
     display: flex;
@@ -389,8 +388,7 @@ main > .interests figcaption {
     color: #FF8833;
 }
 
-/* contacts component */
-
+/* Contact details & professional links */
 main > .contact  {
     display: flex;
     flex-direction: column;
@@ -442,7 +440,7 @@ main > .contact .github {
     margin-bottom: 2rem;
 }
 
-/* footer component */
+/* Consistent website footer */
 
 footer {
     background: #FF6A00;
@@ -455,7 +453,7 @@ footer > p {
     font-weight: 600;
 }
 
-/* CSS for Blogs Navigation Page */
+/* ------ CSS for Blogs Navigation Page -------- */
 
 .blogindex > header {
     background: #000000;
@@ -478,6 +476,8 @@ footer > p {
     grid-template-rows: auto;
     grid-template-areas: "aside";
 }
+
+    /* list of blog post titles and date published  */
 
 .blogindex > .blogs > aside {
     grid-area: aside;
@@ -513,6 +513,8 @@ footer > p {
     padding: 1rem 0;
 }
 
+    /* blogpost thumbnail preview cards (when viewport is wide enough) */
+
 .blogindex > .blogs > .cards {
     grid-area: main;
     display: none;
@@ -520,7 +522,7 @@ footer > p {
     padding-right: 1rem;
 }
 
-/* articles here are the previews of the blogs */
+    /* ".cards" is the container for preview thumbnails */
 
 .blogindex > .blogs > .cards > article {
     background: #F5F5F5;
@@ -554,12 +556,12 @@ footer > p {
 }
 
 .blogindex > .blogs > .cards > article a:hover {
-    color: #FF6A00;
+    color: #1c1e26;
 }
 
 
 
-/* The CSS for Individual Blogs */
+/* ------- CSS for all Blogs ------- */
 
 .blogbody {
     display: flex;
@@ -569,6 +571,8 @@ footer > p {
     background: #1c1e26;
     min-height: 100vh;
 }
+
+    /* Author, Read_time & 'upvote' component */
 
 .blogbody > header {
     background: #000000;
@@ -593,6 +597,20 @@ footer > p {
     text-align: center;
 }
 
+.blogbody > header > button {
+    padding: 1% 2%;
+    border-radius: 10%;
+    background: #F5F5F5;
+    cursor: pointer;
+}
+
+.blogbody > header > button:hover {
+    background: #FF6A00;
+    color: #F5F5F5;
+}
+
+    /* Blog hero image & blog summary for caption */
+
 .blogbody > figure > img {
     width: 100%;
     max-width: 46rem;
@@ -603,6 +621,8 @@ footer > p {
     color: #F5F5F5;
     max-width: 46rem;
 }
+
+    /* Blog post text content */
 
 .blogbody > article > h1 {
     color: #FF8833;
@@ -617,29 +637,17 @@ footer > p {
     margin-top: 2rem;
 }
 
+    /* Blog posts footer width adjust */
+
 .blogbody > footer {
     width: 100%;
     max-width: 46rem;
 }
 
-.blogbody > header > button {
-    padding: 1% 2%;
-    border-radius: 10%;
-    background: #F5F5F5;
-    cursor: pointer;
-}
 
-.blogbody > header > button:hover {
-    background: #FF6A00;
-    color: #F5F5F5;
-}
+/* ------MEDIA QUERIES------- */
 
-
-
-
-                            /* ------media queries------- */
-
-                            /* for tablet size and above */
+/* for tablet viewports and above */
 @media only screen and (min-width: 755px) {
     
     .one {
@@ -740,6 +748,8 @@ footer > p {
         height: 16rem;
     }
 
+        /* blog nav page */
+
     .blogindex > .blogs {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -760,7 +770,8 @@ footer > p {
         display: none;
     }
 }
-                             /* for desktop size and above */
+
+/* for desktop viewports and above */
 @media only screen and (min-width: 1000px) {
     
     header > nav {
