@@ -98,13 +98,13 @@ header > .circle {
 .one {
     position: relative;  /* relative to the viewport */
     border-radius: 50%; /* creates a perfect circle, curve should extend to half the element's width and half the element's height*/
-    height: 300px;
-    width: 300px;
+    height: 19rem;
+    width: 19rem;
     background-color: #FF8833;
     border: 50px solid #FF6A00;
     z-index: 1;
-    top: -420px;
-    left: -100px;
+    top: -26rem;
+    left: -6rem;
     animation: glowing 1.5s ease-in-out infinite alternate;
 }
 
@@ -145,15 +145,15 @@ main > .about > .figures {
 }
 
 main > .about > .figures img {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     margin: 0 1rem;
     margin-bottom: 1rem;
 }
 
 main > .about > .figures #aska {
     width: auto;
-    height: 80px;
+    height: 5rem;
 }
 
 
@@ -643,11 +643,11 @@ footer > p {
 @media only screen and (min-width: 755px) {
     
     .one {
-        height: 500px;
-        width: 500px;
+        height: 31rem;
+        width: 31rem;
         z-index: 1;
-        top: -500px;
-        left: -150px;
+        top: -31rem;
+        left: -9rem;
     }
 
     main > .about {
