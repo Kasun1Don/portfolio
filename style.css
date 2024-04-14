@@ -16,6 +16,8 @@ p {
     font-size: larger;
 }
 
+/* --- !Designed Mobile First -> for a viewport width of 414px and higher --- */
+
 header {
     background: #000000;
     width: 100vw;
