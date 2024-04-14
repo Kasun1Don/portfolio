@@ -32,7 +32,7 @@ I wanted the aesthetic to be similar to the websites my target audience would sp
 * Secondary-Background: #1c1e26 (dark grey)
 * Accent: #F5F5F5 (off-white)
 
-The primary color orange constrasts great against the black background and enhances the visibility of the website. In color theory, orange evokes enthusiasm, which is desirable when the target audience is viewing the portfolio. I personally love that orange is associated with innovative thinking.  
+The primary color orange contrasts great against the black background and enhances the visibility of the website. In color theory, orange evokes enthusiasm, which is desirable when the target audience is viewing the portfolio. I personally love that orange is associated with innovative thinking.  
 
 ## Sitemap of all pages
 
@@ -54,7 +54,7 @@ I decided to design and develop the website mobile first so the focused was on h
 
 The final wireframes were completed using the Diagrams.net tool.
 
-The website was built to be responsive starting from a mobile viewport size of 414px (iPhone XR). Tablet (755px) and Desktop (1000px) wireframes were drawn when there were signigicant changes to the layout of the website compared to the mobile viewport size i.e. where a media query may be used.
+The website was built to be responsive starting from a mobile viewport size of 414px (iPhone XR). Tablet (755px) and Desktop (1000px) wireframes were drawn when there were significant changes to the layout of the website compared to the mobile viewport size i.e. where a media query may be used.
 
 ### Aesthetics decision making process
 
@@ -64,7 +64,7 @@ Below is the wireframe for the mobile viewport size of 414px. This was determine
 
 <img src="./docs/Header.png" width="340"> &nbsp;
 
-I decided to place a bright eye-catching animatined eliment on the top left of corner of the home screen (header) to bring through my original mood for the website encapsulated on my mood board with the neon orange sunset on the black background. I believe this shows personality and makes my portfolio stand out from the initial impression.
+I decided to place a bright eye-catching animated element on the top left of corner of the home screen (header) to bring through my original mood for the website encapsulated on my mood board with the neon orange sunset on the black background. I believe this shows personality and makes my portfolio stand out from the initial impression.
 
 A navigation bar will be floating at the top of the viewport on all pages to allow the user to quickly navigate between pages.
 
@@ -72,13 +72,13 @@ I wanted to have a visual representation of my main professional links, GitHub a
 
 <img src="./docs/about.png" width="300"> &nbsp;
 
-The about section is quite simple, I wanted the highlight to be on the paragraph text in the middle of the page heirarchy and have a visual representation of the organisations I mention. This simple layout will scale well for tablet and desktop devices.
+The about section is quite simple, I wanted the highlight to be on the paragraph text in the middle of the page hierarchy and have a visual representation of the organizations I mention. This simple layout will scale well for tablet and desktop devices.
 
 <img src="./docs/skills.png" width="800"> &nbsp;
 
 Significant changes were made to the Skills mobile section to enhance the experience on a tablet viewport. Therefore, both are shown above.
 
-The skills section should show my three main skills for potential employers and with a visually applealing representation of each before adding more context with text below. On a mobile viewport the visual appeal will be inviting for the user to keep scrolling down. 
+The skills section should show my three main skills for potential employers and with a visually appealing representation of each before adding more context with text below. On a mobile viewport the visual appeal will be inviting for the user to keep scrolling down. 
 
 However, the single column layout isn't optimal for a larger tablet layout because the user has enough space to see all three main skills at once. This wide layout will work well for a larger desktop viewport too.
 
@@ -91,7 +91,7 @@ I wanted to have a quick visual representation of all the programming languages 
 
 The grid layout should be adapted horizontally in larger viewports like tablets to reduce scrolling and take advantage of the viewport width. It will scale well for desktops too.
 
-I had originially planned to have a text explanation under the visuals as seen in my sketches, however I realised that my target audience would be very familiar with the visual representations of common languages and tools.
+I had originally planned to have a text explanation under the visuals as seen in my sketches, however I realized that my target audience would be very familiar with the visual representations of common languages and tools.
 
 <img src="./docs/Projects Nav.png" width="700"> &nbsp;
 
@@ -101,7 +101,7 @@ The navigation is easily adapted to a larger viewport by stretching out he eleme
 
 <img src="./docs/Showcase.png" width="700"> &nbsp;
 
-Each project will be layed out in its own section with the title, a screenshot preview of the project and a paragraph description. This allows the user to scroll between each distictive project. 
+Each project will be layed out in its own section with the title, a screenshot preview of the project and a paragraph description. This allows the user to scroll between each distinctive project. 
 
 I decided to use adaptive design methodology to make it a better user experience on larger viewports like tablets and desktops by laying out the project horizontally next to the description and title. Ideally this horizontal layout switches for each project as shown above, which I have seen executed aesthetically on many other websites.
 
@@ -109,11 +109,11 @@ I decided to use adaptive design methodology to make it a better user experience
 
 Significant changes were made to the Interests mobile section to enhance the experience on a tablet viewport and then for a desktop viewport. Hence, all viewports are shown above.
 
-The interests section is quite simple with visual representations of my interests. Since there isn't much text I wanted to makesure the details in the images are visible through sizing. Showing more images in a lower view height, the user doesn't have the friction of scrolling as much. Thus, I decided to make the images gallery wider as screen width grows, naturally reducing the view height of the section. 
+The interests section is quite simple with visual representations of my interests. Since there isn't much text I wanted to make sure the details in the images are visible through sizing. Showing more images in a lower view height, the user doesn't have the friction of scrolling as much. Thus, I decided to make the images gallery wider as screen width grows, naturally reducing the view height of the section. 
 
 <img src="./docs/contact.png" width="300"> &nbsp;
 
-I decided the contact section should have calls to action using buttons and the button heirarchy should be from least to most important professional link. This section is optimized for mobile and will scale well for tablet and desktop devices as the buttons grow in size.
+I decided the contact section should have calls to action using buttons and the button hierarchy should be from least to most important professional link. This section is optimized for mobile and will scale well for tablet and desktop devices as the buttons grow in size.
 
 The footer will bea very thin section at the bottom of the website and consistent across all pages because it doesn't add much value to a portfolio website.
 
@@ -129,7 +129,7 @@ This section is optimized for mobile and will scale well for tablet and desktop 
 
 For the individual blog posts' content arrangement, I was inspired by Medium, the blogging platform. I wanted the author, date published and estimated read time to show at the top of the article like in Medium. An example medium blog post is included below. However, I wanted to have the header photo above the heading of the blog because I believe the user would already know the blog title if they are in the blog view.
 
-Similar to Medium, I decided the blog width should only grow to a view width similar to a tablet view width (755px) because this makes the blog more aesthetically plasing to view/read. This is demonstrated when comparing the tablet and desktop wireframe above.
+Similar to Medium, I decided the blog width should only grow to a view width similar to a tablet view width (755px) because this makes the blog more aesthetically pleasing to view/read. This is demonstrated when comparing the tablet and desktop wireframe above.
 
 <img src="./docs/Medium.png" width="300"> &nbsp;
 
@@ -137,7 +137,8 @@ Similar to Medium, I decided the blog width should only grow to a view width sim
 
 <img src="./docs/Lnav.png" width="600"> &nbsp;
 
-I decided to add jump links using # in the anchor links to jump between the diffent section of my portfolio on the home page rather than scrolling. I decided the scrolling behavior was too abrupt so I changed the scrolling behavior to "smooth" which is much more pleasing. 
+
+I decided to add jump links using # in the anchor links to jump between the different section of my portfolio on the home page rather than scrolling. I decided the scrolling behavior was too abrupt so I changed the scrolling behavior to "smooth" which is much more pleasing. 
 
 <img src="./docs/Lheader.png" width="500"> &nbsp;
 
