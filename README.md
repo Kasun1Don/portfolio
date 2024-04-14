@@ -22,7 +22,7 @@ Firstly, to get a clear idea of what I wanted the portfolio to feel and look lik
 
 <img src="./docs/Mood Board.png"> &nbsp;  
 
-I wanted the aesthetic to be similar to the websites my target audience would spend a lot of time on like GitHub or API documentation sites like Stripe. I know many techinical people at software companies, including myself, prefer dark mode similar to GitHub's default theme. Therefore I decided to go with a dark background theme with a great contrasting primary color.
+I wanted the aesthetic to be similar to the websites my target audience would spend a lot of time on like GitHub or API documentation sites like Stripe. I know many technical people at software companies, including myself, prefer dark mode similar to GitHub's default theme. Therefore I decided to go with a dark background theme with a great contrasting primary color.
 
 ## Color Scheme
 
@@ -42,7 +42,7 @@ The overall website structure will be as follows:
  
 The main landing page (index.html) will be the homepage where all the details about me, my work/ study history, my professional links and my past projects will be showcased. This helps the user access all the portfolio information seamlessly without page transitions, reducing friction.
 
-The main navigation on the home page will link to a child "blogs" html page which is the list of links all the blogs I post. This page will present a growing catalogue of blog posts as I continure to post blogs into the future.
+The main navigation on the home page will link to a child "blogs" html page which is the list of links all the blogs I post. This page will present a growing catalogue of blog posts as I continue to post blogs into the future.
 
 ## Wireframes
 
