@@ -70,11 +70,11 @@ A navigation bar will be floating at the top of the viewport on all pages to all
 
 I wanted to have a visual representation of my main professional links, GitHub and LinkedIn, right below my name if the user didn't want to scroll or navigate all the way to the contacts at the bottom of the page. This layout is optimised for mobile and will scale well for tablet and desktop devices.
 
-<img src="./docs/about.png" width="300"> &nbsp;
+<img src="./docs/About.png" width="300"> &nbsp;
 
 The about section is quite simple, I wanted the highlight to be on the paragraph text in the middle of the page hierarchy and have a visual representation of the organizations I mention. This simple layout will scale well for tablet and desktop devices.
 
-<img src="./docs/skills.png" width="800"> &nbsp;
+<img src="./docs/Skills.png" width="800"> &nbsp;
 
 Significant changes were made to the Skills mobile section to enhance the experience on a tablet viewport. Therefore, both are shown above.
 
@@ -83,9 +83,9 @@ The skills section should show my three main skills for potential employers and 
 However, the single column layout isn't optimal for a larger tablet layout because the user has enough space to see all three main skills at once. This wide layout will work well for a larger desktop viewport too.
 
 
-<img src="./docs/languages.png" width="700"> &nbsp;
+<img src="./docs/Languages.png" width="700"> &nbsp;
 
-<img src="./docs/tools.png" width="700"> &nbsp;
+<img src="./docs/Tools.png" width="700"> &nbsp;
 
 I wanted to have a quick visual representation of all the programming languages I will know and the tools I will be able to use as a developer. This needed to be expandable as I keep growing in my career so I decided to go for a grid layout. 
 
@@ -111,7 +111,7 @@ Significant changes were made to the Interests mobile section to enhance the exp
 
 The interests section is quite simple with visual representations of my interests. Since there isn't much text I wanted to make sure the details in the images are visible through sizing. Showing more images in a lower view height, the user doesn't have the friction of scrolling as much. The mobile view design has changed from the sketch because there was not enough space for text below the images, as a result that became the layout for the tablet view. I decided to make the images gallery wider as screen width grows, naturally reducing the view height of the section. 
 
-<img src="./docs/contact.png" width="300"> &nbsp;
+<img src="./docs/Contact.png" width="300"> &nbsp;
 
 I decided the contact section should have calls to action using buttons and the button hierarchy should be from least to most important professional link. This section is optimized for mobile and will scale well for tablet and desktop devices as the buttons grow in size.
 
@@ -125,7 +125,7 @@ In addition, I decided to include a visual representation of the blog posts in a
 
 This section is optimized for mobile and will scale well for tablet and desktop devices by simply showing more cards as shown above.
 
-<img src="./docs/blog.png" width="900"> &nbsp;
+<img src="./docs/Blog.png" width="900"> &nbsp;
 
 For the individual blog posts' content arrangement, I was inspired by Medium, the blogging platform. I wanted the author, date published and estimated read time to show at the top of the article like in Medium. An example medium blog post is included below. However, I wanted to have the header photo above the heading of the blog because I believe the user would already know the blog title if they are in the blog view.
 
