@@ -58,11 +58,41 @@ The website was built to be responsive starting from a mobile viewport size of 4
 
 ### Aesthetics decision making process
 
+Some of the designs and components from the hand drawn wireframes were changed/omitted when creating the final wireframes.
 
+<img src="./docs/Header.png" alt="portfolio sitemap" width="340"> &nbsp;
 
+*iphone wireframe
+*inspired by the rainbow circles Ed Challenge CSS Layout Challenge and CSS Animations.
 
+<img src="./docs/about.png" alt="portfolio sitemap" width="300"> &nbsp;
 
+<img src="./docs/skills.png" alt="portfolio sitemap" width="800"> &nbsp;
+* Tablet wireframe
 
+<img src="./docs/languages.png" alt="portfolio sitemap" width="700"> &nbsp;
 
-## Components and styling decisions 
+<img src="./docs/tools.png" alt="portfolio sitemap" width="700"> &nbsp;
 
+<img src="./docs/Projects Nav.png" alt="portfolio sitemap" width="700"> &nbsp;
+
+<img src="./docs/Showcase.png" alt="portfolio sitemap" width="700"> &nbsp;
+
+<img src="./docs/Interests.png" alt="portfolio sitemap" width="900"> &nbsp;
+* Desktop wireframe
+
+<img src="./docs/contact.png" alt="portfolio sitemap" width="300"> &nbsp;
+
+<img src="./docs/Blogs.png" alt="portfolio sitemap" width="700"> &nbsp;
+
+<img src="./docs/blog.png" alt="portfolio sitemap" width="900"> &nbsp;
+*inspired by the medium blog layout
+<img src="./docs/Medium.png" alt="portfolio sitemap" width="300"> &nbsp;
+
+### Components and styling decisions 
+
+<img src="./docs/Medium.png" alt="portfolio sitemap" width="300"> &nbsp;
+
+Jen Simmons 
+https://labs.jensimmons.com/2017/03-009.html
+<img src="./docs/jen.png" alt="portfolio sitemap" width="900">&nbsp;
