@@ -109,7 +109,7 @@ I decided to use adaptive design methodology to make it a better user experience
 
 Significant changes were made to the Interests mobile section to enhance the experience on a tablet viewport and then for a desktop viewport. Hence, all viewports are shown above.
 
-The interests section is quite simple with visual representations of my interests. Since there isn't much text I wanted to make sure the details in the images are visible through sizing. Showing more images in a lower view height, the user doesn't have the friction of scrolling as much. Thus, I decided to make the images gallery wider as screen width grows, naturally reducing the view height of the section. 
+The interests section is quite simple with visual representations of my interests. Since there isn't much text I wanted to make sure the details in the images are visible through sizing. Showing more images in a lower view height, the user doesn't have the friction of scrolling as much. The mobile view design has changed from the sketch because there was not enough space for text below the images, as a result that became the layout for the tablet view. I decided to make the images gallery wider as screen width grows, naturally reducing the view height of the section. 
 
 <img src="./docs/contact.png" width="300"> &nbsp;
 
@@ -133,42 +133,76 @@ Similar to Medium, I decided the blog width should only grow to a view width sim
 
 <img src="./docs/Medium.png" width="300"> &nbsp;
 
+&nbsp;
+
 ## Components and styling decisions 
 
 <img src="./docs/Lnav.png" width="600"> &nbsp;
 
 
-I decided to add jump links using # in the anchor links to jump between the different section of my portfolio on the home page rather than scrolling. I decided the scrolling behavior was too abrupt so I changed the scrolling behavior to "smooth" which is much more pleasing. 
+I decided to add jump links using # in the anchor links to jump between the different section of my portfolio on the home page rather than scrolling to each section. The scrolling behavior was too abrupt so I changed the scrolling behavior to "smooth" which is much more pleasing. The original idea to have the whole navigation anchor link name container turn orange when hovered was discarded due to technical issues so I decided to only turn the anchor link text orange when hovered. 
 
 <img src="./docs/Lheader.png" width="500"> &nbsp;
 
-*inspired by the rainbow circles Ed Challenge CSS Layout Challenge and CSS Animations.
+The neon sunset idea from the wireframe turned into an animated sun that changes colors because the neon color was too jarring. This component shows my creativity and make my portfolio stand out. The component was inspired by the rainbow circles Ed Challenge CSS Layout Challenge and CSS Animations. 
+
+The two professional logos provide quick links but are in black because I didn't want them taking up too much attention when the user first lands on the page header.
 
 <img src="./docs/Labout.png" width="500"> &nbsp;
 
+The about section text contrasts well with the background and makes it easy for the user to read the paragraph text. I decided to alternate the background colors between dark black and dark grey to add to the portfolio's theme as the user scrolled down the page. 
+
 <img src="./docs/Lskills.png" width="500"> &nbsp;
+
+The Overview component of the Skills section has vector graphics that increase in size as the view width increases and the layout successfully changes as per the wireframes. I did this by using CSS grid to arrange the three main elements (Development, Growth and Teamwork) and changing to a wider arrangement based on the media width using a media query.
 
 <img src="./docs/Licons.png" width="500"> &nbsp;
 
+The vector graphics for the languages and tools components were also structured using CSS grid as this allows for a horizontal icon layout when the view width increases.
+
 <img src="./docs/Lpnav.png" width="500"> &nbsp;
+
+The projects navigation layout idea changed from the wireframes as seen above because I believe it is more beneficial to show a visual preview of the project, rather than having a basic list of all the projects. A long list could overwhelm a potential employer, I decided that I will showcase my 4 best projects in this section. 
+
+The anchor link allows the user to jump to different projects the same page rather than scrolling past each and the visuals add another layer of context before deciding which project to have a look at. I made the anchor link white like the main floating navigation to indicate these text are page jump links, they will also highlight in orange when hovered.
 
 <img src="./docs/Lprojects.png" width="500"> &nbsp;
 
+Each project is highlighted with a bright background color to clearly separate each project from the other. This helps a user if they are scrolling to know the clear separation between the four projects. I also tried to match the project screenshot color to the background color for the section using color theory and changed the darkness to maintain contrast with the orange text to maintain legibility.
+
+The image and description for each project for arranged horizontally when view width was larger by using Flexbox.
+Unfortunately I couldn't figure out a scalable solution to alternating the sides of the project screenshot and description text, thus this component differs from the project wireframes.
+
 <img src="./docs/Linterests.png" width="500"> &nbsp;
+
+The interests component was designed to be responsive using CSS grid and grew in size when view width increased because it was important to communicate my interests through the images as a view into my life outside of work.  Having the largest image size possible would be beneficial. Thus the image width increased with the parent container size using relative measurements and setting height to auto.
 
 <img src="./docs/Lcontact.png" width="500"> &nbsp;
 
+The contact section differs to the wireframe representation in that there is more text added to bring through more personality to the portfolio  and connection with the potential employer. The button links are designed to change color when hovered to visually distinguish them and provide dynamic interaction.
+
 <img src="./docs/Lfooter.png" width="500"> &nbsp;
+
+I decided the footer should be in the secondary orange color which is a distinctive neon and signifies that the user has scrolled to the bottom of the page.
 
 <img src="./docs/Lblogs.png" width="500"> &nbsp;
 
-*can easily navigate back to home or blogs page
+The blogs catalogue page keeps the floating navigation bar from the home page to allow the user to navigate back to any section. The idea for this page was changed from the wireframe representation during development because it wasn't feasible to show the blog preview cards on the right side of the screen in a mobile view. Therefore it is only shown in the wider view widths using a media query. Mobile view width retains the basic list and published dates by order of popularity.
+
+This card layout allows the user to have an engaging visual thumbnail preview of the blog as well as information about which blogs are most popular. In a time where users are more used making content decisions from visual stimulations, such as on social media and youtube, I think the cards are a more effective approach.
+
+The card layout that expands to show more cards as view width increases was done by using CSS grid. This component was especially influenced by a grid layout demonstration provided by a founder and advocate of CSS Grid, Jen Simmons. I have included the link and screenshot of the demonstration below.
 
 Jen Simmons 
 https://labs.jensimmons.com/2017/03-009.html
 <img src="./docs/jen.png" width="600">&nbsp;
 
+&nbsp;
+
 <img src="./docs/Lblog.png" width="500"> &nbsp;
 
-*can easily navigate back to home or blogs page
+Blogs keep the floating navigation bar from the home page to allow the user to navigate back to any section or back to the blogs catalogue.  
 
+The blog component was slightly changed from the wireframe by adding an an upvote button to increase user interaction, influenced by the like button on Medium blogs (refer to Medium article screenshot above). I decided to show the estimated reading time more prominently as users tend to have a shorter attention span relative to the past. 
+
+All blog articles use the same css and basic template with relative max-widths on all elements to control the blog width as per the wireframe.
