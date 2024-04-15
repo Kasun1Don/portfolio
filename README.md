@@ -48,7 +48,7 @@ The main navigation on the home page will link to a child "blogs" html page whic
 
 After completing the mood board I put down my initial idea for the layout of the website by drawing a brief wireframe sketch on paper (as per below). 
 
-I decided to design and develop the website mobile first so the focused was on having a detailed mobile viewport wireframe and then expanding out into larger viewport wireframes.
+I decided to design and develop the website mobile first so the focus was on having a detailed mobile viewport wireframe and then expanding out into larger viewport wireframes.
 
 <img src="./docs/sketch.jpg" width="700"> &nbsp;
 
@@ -64,7 +64,7 @@ Below is the wireframe for the mobile viewport size of 414px. This was determine
 
 <img src="./docs/Header.png" width="340"> &nbsp;
 
-I decided to place a bright eye-catching animated element on the top left of corner of the home screen (header) to bring through my original mood for the website encapsulated on my mood board with the neon orange sunset on the black background. I believe this shows personality and makes my portfolio stand out from the initial impression.
+I decided to place a bright eye-catching animated element on the top left corner of the home screen (header) to bring through my original mood for the website encapsulated on my mood board with the neon orange sunset on the black background. I believe this shows personality and makes my portfolio stand out from the initial impression.
 
 A navigation bar will be floating at the top of the viewport on all pages to allow the user to quickly navigate between pages.
 
@@ -78,7 +78,7 @@ The about section is quite simple, I wanted the highlight to be on the paragraph
 
 Significant changes were made to the Skills mobile section to enhance the experience on a tablet viewport. Therefore, both are shown above.
 
-The skills section should show my three main skills for potential employers and with a visually appealing representation of each before adding more context with text below. On a mobile viewport the visual appeal will be inviting for the user to keep scrolling down. 
+The skills section should show my three main skills for potential employers and have visually appealing representations of each skill before adding more context blow with text. On a mobile viewport, the visual appeal will be inviting for the user to keep scrolling down. 
 
 However, the single column layout isn't optimal for a larger tablet layout because the user has enough space to see all three main skills at once. This wide layout will work well for a larger desktop viewport too.
 
@@ -97,13 +97,13 @@ I had originally planned to have a text explanation under the visuals as seen in
 
 The projects navigation was designed to allow the user to easily skip to the project they were interested in discovering more about rather than having to scroll down through each project. This is useful because the list of projects will continue to grow as I progress in my career.
 
-The navigation is easily adapted to a larger viewport by stretching out he element in the center and presenting the project links in columns. Increasing the number of columns relative to the viewport width.
+The navigation is easily adapted to a larger viewport by stretching out the text container in the center and presenting the project links in columns. Increasing the number of columns relative to the viewport width.
 
 <img src="./docs/Showcase.png" width="700"> &nbsp;
 
-Each project will be layed out in its own section with the title, a screenshot preview of the project and a paragraph description. This allows the user to scroll between each distinctive project. 
+Each project will be laid out in its own section with the title, a screenshot preview of the project and a paragraph description. This allows the user to scroll between each distinctive project. 
 
-I decided to use adaptive design methodology to make it a better user experience on larger viewports like tablets and desktops by laying out the project horizontally next to the description and title. Ideally this horizontal layout switches for each project as shown above, which I have seen executed aesthetically on many other websites.
+I decided to use adaptive design methodology to make it a better user experience on larger viewports like tablets and desktops by laying out the project horizontally next to the description and title. Ideally, this horizontal layout switches for each project as shown above, which I have seen executed aesthetically on many other websites.
 
 <img src="./docs/Interests.png" width="900"> &nbsp;
 
@@ -115,19 +115,19 @@ The interests section is quite simple with visual representations of my interest
 
 I decided the contact section should have calls to action using buttons and the button hierarchy should be from least to most important professional link. This section is optimized for mobile and will scale well for tablet and desktop devices as the buttons grow in size.
 
-The footer will bea very thin section at the bottom of the website and consistent across all pages because it doesn't add much value to a portfolio website.
+The footer will be a very thin section at the bottom of the website and consistent across all pages because it doesn't add much value to a portfolio website.
 
 <img src="./docs/Blogs.png" width="700"> &nbsp;
 
 Blogs will be navigated through a column to the left with a list of all blog posts ordered by popularity and date published next to them. This would be beneficial context to the user as the list of blogs published grows in future. 
 
-In addition, I decided to include a visual representation of the blog posts in a cards format, to the right, with a thumbnail view of each blog post header photo. This draws the users attention visually rather than looking at just a bland list. 
+In addition, I decided to include a visual representation of the blog posts in a cards format, to the right, with a thumbnail view of each blog post header photo. This draws the users' attention visually rather than looking at just a bland list. 
 
 This section is optimized for mobile and will scale well for tablet and desktop devices by simply showing more cards as shown above.
 
 <img src="./docs/Blog.png" width="900"> &nbsp;
 
-For the individual blog posts' content arrangement, I was inspired by Medium, the blogging platform. I wanted the author, date published and estimated read time to show at the top of the article like in Medium. An example medium blog post is included below. However, I wanted to have the header photo above the heading of the blog because I believe the user would already know the blog title if they are in the blog view.
+For the individual blog posts' content arrangement, I was inspired by Medium, the blogging platform. I wanted the author, date published and estimated read time to show at the top of the article like in Medium. An example medium blog post is included below. However, I wanted to have the header photo above the heading of the blog because I believe the user would already know the blog title if they have opened the blog.
 
 Similar to Medium, I decided the blog width should only grow to a view width similar to a tablet view width (755px) because this makes the blog more aesthetically pleasing to view/read. This is demonstrated when comparing the tablet and desktop wireframe above.
 
@@ -140,13 +140,13 @@ Similar to Medium, I decided the blog width should only grow to a view width sim
 <img src="./docs/Lnav.png" width="600"> &nbsp;
 
 
-I decided to add jump links using # in the anchor links to jump between the different section of my portfolio on the home page rather than scrolling to each section. The scrolling behavior was too abrupt so I changed the scrolling behavior to "smooth" which is much more pleasing. The original idea to have the whole navigation anchor link name container turn orange when hovered was discarded due to technical issues so I decided to only turn the anchor link text orange when hovered. 
+I decided to add jump links using # in the anchor links to jump between the different sections of my portfolio on the home page rather than scrolling to each section. The scrolling behavior was too abrupt so I changed the scrolling behavior to "smooth" which is much more pleasing. The original idea to have the whole navigation anchor link name container turn orange when hovered was discarded due to technical issues so I decided to only turn the anchor link text orange when hovered. 
 
 <img src="./docs/Lheader.png" width="500"> &nbsp;
 
-The neon sunset idea from the wireframe turned into an animated sun that changes colors because the neon color was too jarring. This component shows my creativity and make my portfolio stand out. The component was inspired by the rainbow circles Ed Challenge CSS Layout Challenge and CSS Animations. 
+The neon sunset idea from the wireframe turned into an animated sun that changes colors because the neon color was too jarring. This component shows my creativity and makes my portfolio stand out. The component was inspired by the rainbow circles Ed Challenge CSS Layout Challenge and CSS Animations. 
 
-The two professional logos provide quick links but are in black because I didn't want them taking up too much attention when the user first lands on the page header.
+The two professional logos provide quick links but are in black because I didn't want them to take up too much attention when the user first lands on the page header.
 
 <img src="./docs/Labout.png" width="500"> &nbsp;
 
@@ -162,16 +162,17 @@ The vector graphics for the languages and tools components were also structured 
 
 <img src="./docs/Lpnav.png" width="500"> &nbsp;
 
-The projects navigation layout idea changed from the wireframes as seen above because I believe it is more beneficial to show a visual preview of the project, rather than having a basic list of all the projects. A long list could overwhelm a potential employer, I decided that I will showcase my 4 best projects in this section. 
+The projects navigation layout idea changed from the wireframes as seen above because I believe it is more beneficial to show a visual preview of the project, rather than having a basic list of all the projects. A long list could overwhelm a potential employer, so I decided that I will showcase my 4 best projects in this section. 
 
-The anchor link allows the user to jump to different projects the same page rather than scrolling past each and the visuals add another layer of context before deciding which project to have a look at. I made the anchor link white like the main floating navigation to indicate these text are page jump links, they will also highlight in orange when hovered.
+The anchor link allows the user to jump to different projects on the same page rather than scrolling past each and the visuals add another layer of context before deciding which project to have a look at. I made the anchor link white like the main floating navigation to indicate these texts are page jump links, they will also be highlighted in orange when hovered.
 
 <img src="./docs/Lprojects.png" width="500"> &nbsp;
 
-Each project is highlighted with a bright background color to clearly separate each project from the other. This helps a user if they are scrolling to know the clear separation between the four projects. I also tried to match the project screenshot color to the background color for the section using color theory and changed the darkness to maintain contrast with the orange text to maintain legibility.
+Each project is highlighted with a bright background color to clearly separate each project from the next. This helps a user if they are scrolling to know the clear separation between the four projects. I also tried to match the project screenshot color to the background color for the section using color theory and changed the darkness to maintain contrast with the orange text to maintain legibility.
 
-The image and description for each project for arranged horizontally when view width was larger by using Flexbox.
-Unfortunately I couldn't figure out a scalable solution to alternating the sides of the project screenshot and description text, thus this component differs from the project wireframes.
+The image and description for each project for arranged horizontally when the view width was larger by using Flexbox.
+
+Unfortunately, I couldn't figure out a scalable solution to alternating the sides of the project screenshot and description text, thus this component differs from the project wireframes.
 
 <img src="./docs/Linterests.png" width="500"> &nbsp;
 
@@ -179,7 +180,7 @@ The interests component was designed to be responsive using CSS grid and grew in
 
 <img src="./docs/Lcontact.png" width="500"> &nbsp;
 
-The contact section differs to the wireframe representation in that there is more text added to bring through more personality to the portfolio  and connection with the potential employer. The button links are designed to change color when hovered to visually distinguish them and provide dynamic interaction.
+The contact section differs from the wireframe representation in that there is more text added to bring through more personality to the portfolio and connection with the potential employer. The button links are designed to change color when hovered to visually distinguish them and provide dynamic interaction.
 
 <img src="./docs/Lfooter.png" width="500"> &nbsp;
 
@@ -189,7 +190,7 @@ I decided the footer should be in the secondary orange color which is a distinct
 
 The blogs catalogue page keeps the floating navigation bar from the home page to allow the user to navigate back to any section. The idea for this page was changed from the wireframe representation during development because it wasn't feasible to show the blog preview cards on the right side of the screen in a mobile view. Therefore it is only shown in the wider view widths using a media query. Mobile view width retains the basic list and published dates by order of popularity.
 
-This card layout allows the user to have an engaging visual thumbnail preview of the blog as well as information about which blogs are most popular. In a time where users are more used making content decisions from visual stimulations, such as on social media and youtube, I think the cards are a more effective approach.
+This card layout allows the user to have an engaging visual thumbnail preview of the blog as well as information about which blogs are most popular. In a time where users are more used to making content decisions from visual stimulations, such as on social media and YouTube, I think the cards are a more effective approach.
 
 The card layout that expands to show more cards as view width increases was done by using CSS grid. This component was especially influenced by a grid layout demonstration provided by a founder and advocate of CSS Grid, Jen Simmons. I have included the link and screenshot of the demonstration below.
 
@@ -203,6 +204,6 @@ https://labs.jensimmons.com/2017/03-009.html
 
 Blogs keep the floating navigation bar from the home page to allow the user to navigate back to any section or back to the blogs catalogue.  
 
-The blog component was slightly changed from the wireframe by adding an an upvote button to increase user interaction, influenced by the like button on Medium blogs (refer to Medium article screenshot above). I decided to show the estimated reading time more prominently as users tend to have a shorter attention span relative to the past. 
+The blog component was slightly changed from the wireframe by adding an an upvote button to increase user interaction, influenced by the like button on Medium blogs (refer to the Medium article screenshot above). I decided to show the estimated reading time more prominently as users tend to have a shorter attention span relative to the past. 
 
-All blog articles use the same css and basic template with relative max-widths on all elements to control the blog width as per the wireframe.
+All blog articles use the same CSS and basic template with relative max-widths on all elements to control the blog width as per the wireframe.
